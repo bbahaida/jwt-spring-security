@@ -10,6 +10,7 @@ public class AppUser implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idAppUser;
+    @Column(unique = true)
     private String username;
     private String password;
 
